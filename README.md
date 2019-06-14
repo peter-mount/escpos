@@ -12,7 +12,7 @@ point-of-sale (POS) system.
 
 Install the package via the following:
 
-    go get -u github.com/knq/escpos
+    go get -u github.com/peter-mount/escpos
 
 ## Example epos-server ##
 
