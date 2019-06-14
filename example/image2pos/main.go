@@ -10,8 +10,8 @@ import (
 	_ "image/jpeg"
 	_ "image/png"
 
-	"github.com/knq/escpos"
-	"github.com/knq/escpos/raster"
+	"github.com/peter-mount/escpos"
+	"github.com/peter-mount/escpos/raster"
 )
 
 var (
@@ -32,7 +32,7 @@ func main() {
 	}
 
 	img, imgFormat, err := image.Decode(imgFile)
-	imgFile.Close()
+	_ = imgFile.Close()
 	if err != nil {
 		log.Fatal(err)
 	}
